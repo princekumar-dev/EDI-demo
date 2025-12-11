@@ -27,6 +27,53 @@ import {
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
+const courses = [
+  {
+    id: 'web-dev',
+    title: 'Full Stack Web Development',
+    provider: 'TechAcademy',
+    progress: 75,
+    duration: '12 weeks',
+    difficulty: 'Intermediate',
+    skills: ['React', 'Node.js', 'MongoDB'],
+    nextLesson: 'Advanced React Hooks',
+    color: 'from-blue-500 to-cyan-500'
+  },
+  {
+    id: 'data-science',
+    title: 'Data Science & Analytics',
+    provider: 'DataPro',
+    progress: 45,
+    duration: '16 weeks',
+    difficulty: 'Advanced',
+    skills: ['Python', 'Machine Learning', 'Statistics'],
+    nextLesson: 'Neural Networks Basics',
+    color: 'from-green-500 to-teal-500'
+  },
+  {
+    id: 'ui-ux',
+    title: 'UI/UX Design Fundamentals',
+    provider: 'DesignHub',
+    progress: 90,
+    duration: '8 weeks',
+    difficulty: 'Beginner',
+    skills: ['Figma', 'User Research', 'Prototyping'],
+    nextLesson: 'Design Systems',
+    color: 'from-purple-500 to-pink-500'
+  },
+  {
+    id: 'business',
+    title: 'Entrepreneurship & Startups',
+    provider: 'BizSchool',
+    progress: 30,
+    duration: '10 weeks',
+    difficulty: 'Intermediate',
+    skills: ['Business Planning', 'Marketing', 'Finance'],
+    nextLesson: 'Market Research',
+    color: 'from-orange-500 to-red-500'
+  }
+]
+
 const CollegeDashboard = () => {
   const [currentSection, setCurrentSection] = useState('overview')
   const [skillPoints, setSkillPoints] = useState(2450)
@@ -121,53 +168,6 @@ const CollegeDashboard = () => {
       color: 'from-purple-500 to-pink-500'
     }
   ])
-
-  const courses = [
-    {
-      id: 'web-dev',
-      title: 'Full Stack Web Development',
-      provider: 'TechAcademy',
-      progress: 75,
-      duration: '12 weeks',
-      difficulty: 'Intermediate',
-      skills: ['React', 'Node.js', 'MongoDB'],
-      nextLesson: 'Advanced React Hooks',
-      color: 'from-blue-500 to-cyan-500'
-    },
-    {
-      id: 'data-science',
-      title: 'Data Science & Analytics',
-      provider: 'DataPro',
-      progress: 45,
-      duration: '16 weeks',
-      difficulty: 'Advanced',
-      skills: ['Python', 'Machine Learning', 'Statistics'],
-      nextLesson: 'Neural Networks Basics',
-      color: 'from-green-500 to-teal-500'
-    },
-    {
-      id: 'ui-ux',
-      title: 'UI/UX Design Fundamentals',
-      provider: 'DesignHub',
-      progress: 90,
-      duration: '8 weeks',
-      difficulty: 'Beginner',
-      skills: ['Figma', 'User Research', 'Prototyping'],
-      nextLesson: 'Design Systems',
-      color: 'from-purple-500 to-pink-500'
-    },
-    {
-      id: 'business',
-      title: 'Entrepreneurship & Startups',
-      provider: 'BizSchool',
-      progress: 30,
-      duration: '10 weeks',
-      difficulty: 'Intermediate',
-      skills: ['Business Planning', 'Marketing', 'Finance'],
-      nextLesson: 'Market Research',
-      color: 'from-orange-500 to-red-500'
-    }
-  ]
 
   const internships = [
     {
